@@ -403,6 +403,11 @@ header {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+    
+     float: left;
+    width:  1000px;
+    height: 400px;
+    background-size: cover;
 }
 
 .portfolio__item:focus {
