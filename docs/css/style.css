@@ -403,11 +403,12 @@ header {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-    
-     float: left;
+       
+    float: left;
     width:  1000px;
     height: 400px;
     background-size: cover;
+
 }
 
 .portfolio__item:focus {
@@ -480,4 +481,34 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Css for Arcade Page */
+
+.arcade__item {
+    background: var(--clr-accent);
+    overflow: hidden;
+}
+
+.arcade__img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+   
+    box-shadow: var(--bs);
+    float: left;
+    width:  200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.arcade__item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.arcade__img:hover,
+.arcade__item:focus .arcade__img {
+    transform: scale(1.2);
+    opacity: .5;
 }
