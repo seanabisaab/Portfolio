@@ -68,6 +68,8 @@ strong { font-weight: var(--fw-bold) }
     outline-offset: 3px;
 }
 
+.emphasized { font-style: italic; }
+
 /* Buttons */
 
 .btn {
