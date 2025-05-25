@@ -349,6 +349,7 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+    margin-top: 100px;
 }
 
 @media (min-width: 600px) {
@@ -527,3 +528,62 @@ header {
     height: auto;
     width: 100%;
 }
+
+/* Resume preview section */
+.resume-container {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.resume-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-light);
+    padding: 2em;
+}
+
+.resume-frame {
+    width: 100%;
+    height: 1035px;
+    border: none;
+    box-shadow: var(--bs);
+}
+
+.download-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.resume-container:hover .download-button {
+    opacity: 1;
+}
+
+.download-button:hover {
+    background: var(--clr-dark);
+    color: var(--clr-accent);
+}
+
+@media (max-width: 850px) {
+    .resume-container {
+        width: 100%;
+    }
+    
+    .resume-frame {
+        height: 129vw;
+    }
+}
+
